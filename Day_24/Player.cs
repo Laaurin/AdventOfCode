@@ -4,6 +4,7 @@ public class Player
 {
     private int _x;
     private int _y;
+    private int _distance;
 
     public int X
     {
@@ -17,10 +18,17 @@ public class Player
         set => _y = value;
     }
 
-    public Player(int x = 1, int y = 0)
+    public int Distace
+    {
+        get => _distance;
+        set => _distance = value;
+    }
+
+    public Player(int x = 1, int y = 0, int distance = 0)
     {
         _x = x;
         _y = y;
+        _distance = distance;
     }
 
     public override bool Equals(object? obj)
